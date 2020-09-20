@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{D4C55F35-7E64-EEEE-EFB8-EDEDC5CD42DE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIManager.cs">
+    <Files>
+      <File FileName="../../../Documents/Projects/Unity Projects/Tiny World/Assets/Scripts/PlayerController.cs" Line="108" Column="8" />
+      <File FileName="Assets/Scripts/Client.cs" Line="96" Column="10" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="4" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Informatika" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="UIManager.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="49e6fed6-8911-40be-bf8e-c46a53d10c36" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
