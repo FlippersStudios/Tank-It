@@ -10,3 +10,15 @@
 /Users/filip.skrget/Desktop/INFORMATIKA/Server/Server/obj/Debug/netcoreapp3.1/Server.dll
 /Users/filip.skrget/Desktop/INFORMATIKA/Server/Server/obj/Debug/netcoreapp3.1/Server.pdb
 /Users/filip.skrget/Desktop/INFORMATIKA/Server/Server/obj/Debug/netcoreapp3.1/Server.genruntimeconfig.cache
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/bin/Debug/netcoreapp3.1/Server.deps.json
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/bin/Debug/netcoreapp3.1/Server.runtimeconfig.json
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/bin/Debug/netcoreapp3.1/Server.runtimeconfig.dev.json
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/bin/Debug/netcoreapp3.1/Server.dll
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/bin/Debug/netcoreapp3.1/Server.pdb
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/obj/Debug/netcoreapp3.1/Server.csprojAssemblyReference.cache
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/obj/Debug/netcoreapp3.1/Server.AssemblyInfoInputs.cache
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/obj/Debug/netcoreapp3.1/Server.AssemblyInfo.cs
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/obj/Debug/netcoreapp3.1/Server.csproj.CoreCompileInputs.cache
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/obj/Debug/netcoreapp3.1/Server.dll
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/obj/Debug/netcoreapp3.1/Server.pdb
+/Users/filip.skrget/Desktop/Tank-It/Server/Server/obj/Debug/netcoreapp3.1/Server.genruntimeconfig.cache

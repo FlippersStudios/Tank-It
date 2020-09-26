@@ -11,8 +11,16 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         
+    }
+
+    private void SendInputToServer()
+    {
+        bool[] _inputs = new bool[]
+        {
+
+        };
     }
 }

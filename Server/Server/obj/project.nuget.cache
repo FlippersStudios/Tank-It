@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Ni1e0RXwXxMLD0cCKaoT9fibT8ZnZGykfWEVpHqJ0XnpfhMJzLROVAzncTax2aFNlXPEU/CV9QSJIOAKAlFNA==",
+  "dgSpecHash": "N/WWAxBMJy75zPatl2sz9Sh3dagqn4tRKfs5T5KufdvOGoxtdtampEgVSPRpJJmw6UWubDfy+tgvY41MIsxgAA==",
   "success": true,
-  "projectFilePath": "/Users/filip.skrget/Desktop/INFORMATIKA/Server/Server/Server.csproj",
+  "projectFilePath": "/Users/filip.skrget/Desktop/Tank-It/Server/Server/Server.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

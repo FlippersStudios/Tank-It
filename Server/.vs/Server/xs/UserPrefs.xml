@@ -2,10 +2,12 @@
   <MonoDevelop.Ide.ItemProperties.Server PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Server/Packet.cs">
     <Files>
-      <File FileName="Server/Program.cs" Line="16" Column="1" />
-      <File FileName="Server/Server.cs" Line="22" Column="36" />
-      <File FileName="Server/Client.cs" Line="69" Column="14" />
+      <File FileName="Server/Server.cs" Line="113" Column="1" />
+      <File FileName="Server/Client.cs" />
       <File FileName="Server/Packet.cs" Line="1" Column="1" />
+      <File FileName="Server/ServerSend.cs" />
+      <File FileName="Server/ServerHandle.cs" />
+      <File FileName="Server/Player.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

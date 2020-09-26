@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/filip.skrget/Desktop/INFORMATIKA/Server/Server/Server.csproj": {}
+    "/Users/filip.skrget/Desktop/Tank-It/Server/Server/Server.csproj": {}
   },
   "projects": {
-    "/Users/filip.skrget/Desktop/INFORMATIKA/Server/Server/Server.csproj": {
+    "/Users/filip.skrget/Desktop/Tank-It/Server/Server/Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/filip.skrget/Desktop/INFORMATIKA/Server/Server/Server.csproj",
+        "projectUniqueName": "/Users/filip.skrget/Desktop/Tank-It/Server/Server/Server.csproj",
         "projectName": "Server",
-        "projectPath": "/Users/filip.skrget/Desktop/INFORMATIKA/Server/Server/Server.csproj",
+        "projectPath": "/Users/filip.skrget/Desktop/Tank-It/Server/Server/Server.csproj",
         "packagesPath": "/Users/filip.skrget/.nuget/packages/",
-        "outputPath": "/Users/filip.skrget/Desktop/INFORMATIKA/Server/Server/obj/",
+        "outputPath": "/Users/filip.skrget/Desktop/Tank-It/Server/Server/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
