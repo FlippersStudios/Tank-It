@@ -1,20 +1,21 @@
 ﻿<Properties StartupConfiguration="{F93C1B74-772E-4938-AB4F-0AFD6FDF6664}|Default">
   <MonoDevelop.Ide.ItemProperties.Server PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Server/Packet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Server/Player.cs">
     <Files>
-      <File FileName="Server/Server.cs" Line="113" Column="1" />
-      <File FileName="Server/Client.cs" />
-      <File FileName="Server/Packet.cs" Line="1" Column="1" />
-      <File FileName="Server/ServerSend.cs" />
-      <File FileName="Server/ServerHandle.cs" />
-      <File FileName="Server/Player.cs" />
+      <File FileName="Server/Server.cs" Line="114" Column="51" />
+      <File FileName="Server/ServerHandle.cs" Line="34" Column="75" />
+      <File FileName="Server/Player.cs" Line="19" Column="39" />
+      <File FileName="Server/Client.cs" Line="181" Column="68" />
+      <File FileName="Server/Packet.cs" Line="353" Column="14" />
+      <File FileName="Server/ServerSend.cs" Line="1" Column="1" />
+      <File FileName="Server/Constants.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Server" expanded="True">
             <Node name="Server" expanded="True">
-              <Node name="Packet.cs" selected="True" />
+              <Node name="Player.cs" selected="True" />
             </Node>
           </Node>
         </State>

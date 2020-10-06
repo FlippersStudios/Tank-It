@@ -21,7 +21,7 @@ namespace Server
 
         private static void MainThread()
         {
-            Console.WriteLine($"Main thread started. Running at: {Constants.TICKS_PER_SECONDS}tps");
+            Console.WriteLine($"Main thread started. Running at: {Constants.TICKS_PER_SECOND}tps");
             DateTime _nextLoop = DateTime.Now;
 
             while (isRunning)
