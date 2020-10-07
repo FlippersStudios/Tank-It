@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     bool a;
     bool s;
     bool d;
+    bool space;
+    bool b;
 
     private void Awake()
     {
@@ -22,13 +24,14 @@ public class PlayerController : MonoBehaviour
         manager.Player.a.performed += ctx => a = ctx.ReadValueAsButton();
         manager.Player.s.performed += ctx => s = ctx.ReadValueAsButton();
         manager.Player.d.performed += ctx => d = ctx.ReadValueAsButton();
+        manager.Player.space.performed += ctx => space = ctx.ReadValueAsButton();
+        manager.Player.b.performed += ctx => b = ctx.ReadValueAsButton();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         SendInputToServer();
-        //print(w.ToString() + a.ToString()+ s.ToString() + d.ToString());
     }
 
     private void SendInputToServer()
@@ -38,12 +41,14 @@ public class PlayerController : MonoBehaviour
             w,
             a,
             s,
-            d
+            d,
+            space,
+            b
         };
-        print(w.ToString() + "=W");
-        print(a.ToString() + "=A");
-        print(s.ToString() + "=S");
-        print(d.ToString() + "=D");
+        // print(w.ToString() + "=W");
+        // print(a.ToString() + "=A");
+        // print(s.ToString() + "=S");
+        // print(d.ToString() + "=D");
         ClientSend.PlayerMovement(_inputs);
     }
 

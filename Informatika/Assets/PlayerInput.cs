@@ -49,6 +49,22 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""space"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""bb4f91b8-b993-48d0-a9f2-233b1b738f0e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""b"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""bf5dd007-4b9b-45a5-beef-5042d0b97035"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -95,6 +111,28 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                     ""action"": ""d"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""20a07764-e6f8-4081-b3c7-39a954c05ccf"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""space"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f9cf884c-6b43-4fc4-a294-43977bb4be00"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""b"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -124,6 +162,8 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         m_Player_a = m_Player.FindAction("a", throwIfNotFound: true);
         m_Player_s = m_Player.FindAction("s", throwIfNotFound: true);
         m_Player_d = m_Player.FindAction("d", throwIfNotFound: true);
+        m_Player_space = m_Player.FindAction("space", throwIfNotFound: true);
+        m_Player_b = m_Player.FindAction("b", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -177,6 +217,8 @@ public class @PlayerInput : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_a;
     private readonly InputAction m_Player_s;
     private readonly InputAction m_Player_d;
+    private readonly InputAction m_Player_space;
+    private readonly InputAction m_Player_b;
     public struct PlayerActions
     {
         private @PlayerInput m_Wrapper;
@@ -185,6 +227,8 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         public InputAction @a => m_Wrapper.m_Player_a;
         public InputAction @s => m_Wrapper.m_Player_s;
         public InputAction @d => m_Wrapper.m_Player_d;
+        public InputAction @space => m_Wrapper.m_Player_space;
+        public InputAction @b => m_Wrapper.m_Player_b;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -206,6 +250,12 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @d.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnD;
                 @d.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnD;
                 @d.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnD;
+                @space.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
+                @space.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
+                @space.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpace;
+                @b.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnB;
+                @b.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnB;
+                @b.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnB;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -222,6 +272,12 @@ public class @PlayerInput : IInputActionCollection, IDisposable
                 @d.started += instance.OnD;
                 @d.performed += instance.OnD;
                 @d.canceled += instance.OnD;
+                @space.started += instance.OnSpace;
+                @space.performed += instance.OnSpace;
+                @space.canceled += instance.OnSpace;
+                @b.started += instance.OnB;
+                @b.performed += instance.OnB;
+                @b.canceled += instance.OnB;
             }
         }
     }
@@ -241,5 +297,7 @@ public class @PlayerInput : IInputActionCollection, IDisposable
         void OnA(InputAction.CallbackContext context);
         void OnS(InputAction.CallbackContext context);
         void OnD(InputAction.CallbackContext context);
+        void OnSpace(InputAction.CallbackContext context);
+        void OnB(InputAction.CallbackContext context);
     }
 }
