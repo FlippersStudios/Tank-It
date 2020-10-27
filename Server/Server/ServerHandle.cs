@@ -5,7 +5,7 @@ namespace Server
 {
     public class ServerHandle
     {
-        public static void WelcomeRecieved(int _fromClient, Packet _packet)
+        public static void WelcomeReceived(int _fromClient, Packet _packet)
         {
             int _clientIdCheck = _packet.ReadInt();
             string _username = _packet.ReadString();
@@ -24,9 +24,9 @@ namespace Server
         public static void PlayerMovement(int _fromClient, Packet _packet)
         {
             bool[] _inputs = new bool[_packet.ReadInt()];
-            for (int i = 0; i < _inputs.Length; i++)
+            for (int _i = 0; _i < _inputs.Length; _i++)
             {
-                _inputs[i] = _packet.ReadBool();
+                _inputs[_i] = _packet.ReadBool();
             }
 
             Quaternion _rotation = _packet.ReadQuaternion();

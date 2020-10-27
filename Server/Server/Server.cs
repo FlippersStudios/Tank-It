@@ -121,7 +121,7 @@ namespace Server
             packetHandlers = new Dictionary<int, PacketHandler>()
             {
                 //TODO1: when creating new method first add handler here. Then go to ServerHandle class
-                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeRecieved },
+                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
                 { (int)ClientPackets.playerMovement, ServerHandle.PlayerMovement }
             };
             Console.WriteLine("Initialized packets");

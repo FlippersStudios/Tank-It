@@ -91,7 +91,7 @@ namespace Server
             {
                _packet.Write(_player.id);
                _packet.Write(_player.position);
-               
+
                SendUDPDataToAll(_packet);
             }
         }
@@ -103,7 +103,7 @@ namespace Server
                 _packet.Write(_player.id);
                 _packet.Write(_player.rotation);
                
-                SendUDPDataToAllExcept(_player.id, _packet);
+                SendUDPDataToAll(_packet);
             }
         }
     }

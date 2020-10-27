@@ -29,14 +29,28 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         SendInputToServer();
+
+        if (transform.rotation.eulerAngles.z == 180)
+        {
+            print("Rotation set to: 180");
+        }
+        if (transform.rotation.eulerAngles.z == -180)
+        {
+            print("Rotation set to: -180");
+        }
+        print(transform.rotation.eulerAngles.z);
+        if (space)
+        {
+            print(transform.rotation.eulerAngles.z);
+        }
     }
 
     private void SendInputToServer()
     {
-        bool[] _inputs = new bool[]
+        var _inputs = new bool[]
         {
             w,
             a,
@@ -45,10 +59,6 @@ public class PlayerController : MonoBehaviour
             space,
             b
         };
-        // print(w.ToString() + "=W");
-        // print(a.ToString() + "=A");
-        // print(s.ToString() + "=S");
-        // print(d.ToString() + "=D");
         ClientSend.PlayerMovement(_inputs);
     }
 
