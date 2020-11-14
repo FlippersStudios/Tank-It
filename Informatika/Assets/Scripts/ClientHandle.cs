@@ -27,6 +27,7 @@ public class ClientHandle : MonoBehaviour
         Vector3 _rotation = _packet.ReadVector3();
 
         Quaternion _euler = Quaternion.Euler(_rotation);
+        
         GameManager.instance.SpawnPlayer(_id, _username, _position, _euler);
     }
 
@@ -45,6 +46,14 @@ public class ClientHandle : MonoBehaviour
 
         Quaternion _euler = Quaternion.Euler(_rotation);
         GameManager.players[_id].transform.rotation = _euler;
+    }
+
+    public static void PlayerDisconnected(Packet _packet)
+    {
+        int _id = _packet.ReadInt();
+
+        Destroy(GameManager.players[_id].gameObject);
+        GameManager.players.Remove(_id);
     }
 
 }
